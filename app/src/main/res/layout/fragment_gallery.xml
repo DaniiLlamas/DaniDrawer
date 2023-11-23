@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del personaje"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextNivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nivel"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona el arma:"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupArma"
+        android:layout_width="423dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonArco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arco" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEspada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espada" />
+
+        <RadioButton
+            android:id="@+id/radioButtonLanza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lanza" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEspadon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espadon" />
+
+        <RadioButton
+            android:id="@+id/radioButtonLibro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Libro" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona el elemento:"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupElemento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonAnemo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anemo" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGeo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geo" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCryo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cryo" />
+
+        <RadioButton
+            android:id="@+id/radioButtonHydro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hydro" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDendro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dendro" />
+
+        <RadioButton
+            android:id="@+id/radioButtonElectro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electro" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAgregarPersonaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Personaje"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
+</ScrollView>
